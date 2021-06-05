@@ -2,6 +2,7 @@
 
 namespace Theme\Providers;
 
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Themosis\Core\ThemeManager;
 use Themosis\Support\Facades\Asset;
@@ -23,8 +24,20 @@ class AssetServiceProvider extends ServiceProvider
         /** @var ThemeManager $theme */
         $theme = $this->app->make('wp.theme');
 
-        Asset::add('theme_styles', 'css/theme.css', [], $theme->getHeader('version'))->to('front');
-        Asset::add('theme_woo', 'css/woocommerce.css', ['theme_styles'], $theme->getHeader('version'))->to('front');
-        Asset::add('theme_js', 'js/theme.min.js', [], $theme->getHeader('version'))->to('front');
+//        Asset::add('theme_styles', 'css/theme.css', [], $theme->getHeader('version'))->to('front');
+//        Asset::add('theme_woo', 'css/woocommerce.css', ['theme_styles'], $theme->getHeader('version'))->to('front');
+//        Asset::add('theme_js', 'js/theme.min.js', [], $theme->getHeader('version'))->to('front');
+
+        Asset::add('app-style', 'css/app.css', [], $theme->getHeader('version'))->to('front');
+        Asset::add('app-script', 'js/app.js', [], $theme->getHeader('version'))->to('front');
+
+        View::composer(['layouts.header', 'layouts.footer'], function ($view) {
+            $menus = wp_get_nav_menu_items(get_nav_menu_locations()['menu-1']);
+
+            global $wp;
+            $current_url = home_url(add_query_arg(array(), $wp->request)) . '/';
+
+            $view->with(compact('menus', 'current_url'));
+        });
     }
 }
