@@ -32,12 +32,19 @@ class AssetServiceProvider extends ServiceProvider
         Asset::add('app-script', 'js/app.js', [], $theme->getHeader('version'))->to('front');
 
         View::composer(['layouts.header', 'layouts.footer'], function ($view) {
+            $logo = get_theme_mod( 'custom_logo' );
+            $logo_image = wp_get_attachment_image_src( $logo , 'full' );
+            $logo_image_url = $logo_image[0];
+            $logo_image_width = $logo_image[1];
+            $logo_image_height = $logo_image[2];
+
+
             $menus = wp_get_nav_menu_items(get_nav_menu_locations()['menu-1']);
 
             global $wp;
             $current_url = home_url(add_query_arg(array(), $wp->request)) . '/';
 
-            $view->with(compact('menus', 'current_url'));
+            $view->with(compact('menus', 'current_url', 'logo_image_url'));
         });
     }
 }

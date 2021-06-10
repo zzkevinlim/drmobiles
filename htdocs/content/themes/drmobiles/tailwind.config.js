@@ -20,8 +20,8 @@ module.exports = {
     screens: {
       'sm': '640px',
       'md': '768px',
-      'lg': '1280px',
-      'xl': '1250px',
+      'lg': '1024px',
+      'xl': '1280px',
       '2xl': '1536px',
       '3xl': '1890px',
     },
@@ -29,6 +29,7 @@ module.exports = {
       fontFamily: {
         'roboto' : ['Roboto', 'sans-serif'],
         'montserrat' : ['Montserrat', 'sans-serif'],
+        'sarpanch' : ['Sarpanch', 'sans-serif'],
       },
       colors: {
         'dark-blue': {
