@@ -25,7 +25,7 @@
             </div>
             <div class="container px-[15px] mx-auto flex lg:hidden items-center justify-between h-full">
                 <div class="flex h-full">
-                    <a class="inline-flex items-center font-sarpanch font-bold italic text-white text-[20px] px-[5px] h-full transition-all ease-in-out duration-300 hover:bg-dark-blue-300" href="{{ home_url() }}">{{ get_bloginfo('name') }}</a>
+                    <a class="inline-flex items-center font-sarpanch font-bold italic text-white text-[18px] px-[5px] h-full transition-all ease-in-out duration-300 hover:bg-dark-blue-300" href="{{ home_url() }}">{{ get_bloginfo('name') }}</a>
                 </div>
                 <div class="flex h-full">
                     <a class="inline-flex items-center font-roboto text-white text-[15px] px-[5px] h-full transition-all ease-in-out duration-300 hover:bg-dark-blue-300" href="tel:{{ str_replace(' ', '', get_field('company_phone', 'option')) }}">
