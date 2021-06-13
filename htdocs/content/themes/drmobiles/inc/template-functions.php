@@ -103,12 +103,12 @@ function validateRecaptcha($action, $token)
 
 Ajax::listen('submit_contact_form', function () {
     if (!wp_verify_nonce($_POST['wp_nonce'], 'wp-nonce')) {
-        echo json_encode(['status' => 0, 'message' => 'Invalid nonce.']);
+        echo json_encode(['status' => 0, 'message' => get_field('contact_response_1', 'option')]);
         die();
     }
 
     if (!validateRecaptcha($_POST['action'], $_POST['recaptcha_token'])) {
-        echo json_encode(['status' => 2, 'message' => 'Failed to validate recaptcha.']);
+        echo json_encode(['status' => 2, 'message' => get_field('contact_response_3', 'option')]);
         die();
     }
 
@@ -117,7 +117,7 @@ Ajax::listen('submit_contact_form', function () {
     $subject = 'Enquiry';
     $headers = [];
     $headers[] = 'From: ' . $_POST['name'] . ' <' . $_POST['email'] . '>';
-    $recipients = get_field('enquiry_recipients', 'option');
+    $recipients = get_field('recipients', 'option');
     if (count($recipients)) {
         foreach ($recipients as $recipient) {
             $headers[] = 'Cc: ' . $recipient['name'] . ' <' . $recipient['email'] . '>';
@@ -142,11 +142,11 @@ Ajax::listen('submit_contact_form', function () {
     $mail = wp_mail($to, $subject, $message, $headers);
 
     if (!$mail) {
-        echo json_encode(['status' => 3, 'message' => 'Failed to send.']);
+        echo json_encode(['status' => 3, 'message' => get_field('contact_response_4', 'option')]);
         die();
     }
 
-    echo json_encode(['status' => 1, 'message' => 'Sent successfully.']);
+    echo json_encode(['status' => 1, 'message' => get_field('contact_response_2', 'option')]);
     die();
 });
 

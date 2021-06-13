@@ -44,3 +44,5 @@ mix.js('assets/js/theme.js', 'dist/js/theme.min.js')
 
 mix.sass('assets/sass/app.scss', 'dist/css/app.css');
 mix.js('assets/js/app.js', 'dist/js/app.js').vue();
+
+mix.js('assets/js/contact.js', 'dist/js/contact.js').vue();

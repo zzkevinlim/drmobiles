@@ -1,6 +1,7 @@
 {
     "/js/theme.min.js": "/js/theme.min.js",
     "/js/app.js": "/js/app.js",
+    "/js/contact.js": "/js/contact.js",
     "/css/app.css": "/css/app.css",
     "/css/woocommerce.css": "/css/woocommerce.css",
     "/css/theme.css": "/css/theme.css"

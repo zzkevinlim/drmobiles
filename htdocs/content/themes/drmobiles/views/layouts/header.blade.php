@@ -1,4 +1,4 @@
-<header class="bg-white h-[70px] lg:h-[160px] relative z-[9999]" x-data="header()" x-on:load.window.debounce.0="isHeaderScrolled()" x-on:scroll.window.debounce.0="isHeaderScrolled()">
+<header class="bg-white h-[40px] lg:h-[130px] relative z-[9999]" x-data="header()" x-on:load.window.debounce.0="isHeaderScrolled()" x-on:scroll.window.debounce.0="isHeaderScrolled()">
     <div class="fixed w-full">
         <div class="bg-dark-blue h-[40px]">
             <div class="container px-[15px] mx-auto hidden lg:flex items-center justify-end h-full">
@@ -72,7 +72,8 @@
         </div>
     </div>
     <div class="fixed inset-0"
-         x-show="sidemenuOpened"
+         style="display: none;"
+         x-show="sidemenu"
          x-transition:enter="transition-all ease-in-out duration-300"
          x-transition:enter-start="opacity-0"
          x-transition:enter-end="opacity-100"
@@ -80,8 +81,8 @@
          x-transition:leave-start="opacity-100"
          x-transition:leave-end="opacity-0">
         <div class="bg-dark-blue bg-opacity-50 absolute inset-0" x-on:click="toggleSidemenu()"></div>
-        <div class="flex flex-col bg-white w-full max-w-xs h-full pt-[60px] px-[60px] relative"
-             x-show="sidemenuOpened"
+        <div class="flex flex-col bg-white w-full max-w-xs h-full pt-[60px] relative"
+             x-show="sidemenu"
              x-transition:enter="transition ease-in-out duration-300 transform"
              x-transition:enter-start="-translate-x-full"
              x-transition:enter-end="translate-x-0"
@@ -95,6 +96,9 @@
                     </svg>
                 </div>
             </div>
+            @foreach($menus as $menu)
+                <a class="font-sarpanch font-bold italic text-[30px] {{ $menu->url == $current_url ? 'text-dark-blue' : 'text-cape-palliser' }} py-[15px] px-[60px] transition-all ease-in-out duration-300 hover:text-white hover:bg-dark-blue" href="{{ $menu->url }}">{{ $menu->title }}</a>
+            @endforeach
         </div>
     </div>
 </header>
@@ -105,9 +109,9 @@
       isHeaderScrolled () {
         this.headerScrolled = window.scrollY > 0;
       },
-      sidemenuOpened: false,
+      sidemenu: false,
       toggleSidemenu () {
-        this.sidemenuOpened = !this.sidemenuOpened;
+        this.sidemenu = !this.sidemenu;
       }
     };
   }
