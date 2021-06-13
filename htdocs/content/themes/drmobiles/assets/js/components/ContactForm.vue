@@ -9,31 +9,38 @@
               <label class="block">
                 <ValidationProvider rules="name_required" v-slot="{ errors }">
                   <span class="text-gray-700">{{ contact_label_1 }}</span>
-                  <input v-model="name" v-bind:class="errors.length ? 'border-[2px] border-red-500' : ''" v-bind:placeholder="errors.length ? errors[0] : ''" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                  <input v-model="name" v-bind:class="errors.length ? 'border-[2px] border-red-500' : 'border-gray-300'" v-bind:placeholder="errors.length ? errors[0] : ''" type="text" class="mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                 </ValidationProvider>
               </label>
               <label class="block">
                 <ValidationProvider rules="phone_required" v-slot="{ errors }">
                   <span class="text-gray-700">{{ contact_label_2 }}</span>
-                  <input v-model="phone" v-bind:class="errors.length ? 'border-[2px] border-red-500' : ''" v-bind:placeholder="errors.length ? errors[0] : ''" type="text" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                  <input v-model="phone" v-bind:class="errors.length ? 'border-[2px] border-red-500' : 'border-gray-300'" v-bind:placeholder="errors.length ? errors[0] : ''" type="text" class="mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                 </ValidationProvider>
               </label>
               <label class="block">
                 <ValidationProvider rules="email_valid" v-slot="{ errors }">
                   <span class="text-gray-700">{{ contact_label_3 }}</span>
-                  <input v-model="email" v-bind:class="errors.length ? 'border-[2px] border-red-500' : ''" type="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                  <input v-model="email" v-bind:class="errors.length ? 'border-[2px] border-red-500' : 'border-gray-300'" type="email" class="mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
                 </ValidationProvider>
               </label>
               <label class="block">
                 <ValidationProvider rules="message_required" v-slot="{ errors }">
                   <span class="text-gray-700">{{ contact_label_4 }}</span>
-                  <textarea v-model="message" v-bind:class="errors.length ? 'border-[2px] border-red-500' : ''" v-bind:placeholder="errors.length ? errors[0] : ''" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" rows="5"></textarea>
+                  <textarea v-model="message" v-bind:class="errors.length ? 'border-[2px] border-red-500' : 'border-gray-300 '" v-bind:placeholder="errors.length ? errors[0] : ''" class="mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" rows="5"></textarea>
                 </ValidationProvider>
               </label>
               <div class="block text-right">
-                <div v-on:click="onSubmit" class="inline-block font-sarpanch font-bold italic text-white text-[18px] uppercase bg-dark-blue py-[10px] px-[10px] border-[1px] border-dark-blue rounded-[5px] shadow-xl transition-all ease-in-out duration-300 hover:text-dark-blue hover:bg-white cursor-pointer">
-                  {{ contact_label_5 }}
-                </div>
+                <button v-on:click="onSubmit" :disabled="loading" class="inline-flex items-center bg-dark-blue text-white py-[10px] px-[10px] border-[1px] border-dark-blue rounded-[5px] shadow-xl cursor-pointer transition-all ease-in-out duration-300 hover:text-dark-blue hover:bg-white focus:outline-none focus-within-outline-none">
+                  <svg v-if="loading" class="animate-spin w-[20px] h-[20px] mr-[5px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  <svg v-if="!loading" xmlns="http://www.w3.org/2000/svg" class="w-[20px] h-[20px] mr-[5px]" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                  </svg>
+                  <div class="font-sarpanch font-bold italic text-[18px] uppercase ">{{ contact_label_5 }}</div>
+                </button>
               </div>
             </div>
           </form>

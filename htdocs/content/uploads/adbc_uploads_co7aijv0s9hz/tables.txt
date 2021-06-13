@@ -1,0 +1,12 @@
+commentmeta:w:w
+comments:w:w
+links:w:w
+options:w:w
+postmeta:w:w
+posts:w:w
+term_relationships:w:w
+term_taxonomy:w:w
+termmeta:w:w
+terms:w:w
+usermeta:w:w
+users:w:w

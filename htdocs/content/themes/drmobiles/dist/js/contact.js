@@ -1918,6 +1918,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -9996,10 +10003,10 @@ var render = function() {
                                       }
                                     ],
                                     staticClass:
-                                      "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+                                      "mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
                                     class: errors.length
                                       ? "border-[2px] border-red-500"
-                                      : "",
+                                      : "border-gray-300",
                                     attrs: {
                                       placeholder: errors.length
                                         ? errors[0]
@@ -10051,10 +10058,10 @@ var render = function() {
                                       }
                                     ],
                                     staticClass:
-                                      "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+                                      "mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
                                     class: errors.length
                                       ? "border-[2px] border-red-500"
-                                      : "",
+                                      : "border-gray-300",
                                     attrs: {
                                       placeholder: errors.length
                                         ? errors[0]
@@ -10106,10 +10113,10 @@ var render = function() {
                                       }
                                     ],
                                     staticClass:
-                                      "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+                                      "mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
                                     class: errors.length
                                       ? "border-[2px] border-red-500"
-                                      : "",
+                                      : "border-gray-300",
                                     attrs: { type: "email" },
                                     domProps: { value: _vm.email },
                                     on: {
@@ -10156,10 +10163,10 @@ var render = function() {
                                       }
                                     ],
                                     staticClass:
-                                      "mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
+                                      "mt-1 block w-full rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50",
                                     class: errors.length
                                       ? "border-[2px] border-red-500"
-                                      : "",
+                                      : "border-gray-300 ",
                                     attrs: {
                                       placeholder: errors.length
                                         ? errors[0]
@@ -10187,17 +10194,79 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "block text-right" }, [
                       _c(
-                        "div",
+                        "button",
                         {
                           staticClass:
-                            "inline-block font-sarpanch font-bold italic text-white text-[18px] uppercase bg-dark-blue py-[10px] px-[10px] border-[1px] border-dark-blue rounded-[5px] shadow-xl transition-all ease-in-out duration-300 hover:text-dark-blue hover:bg-white cursor-pointer",
+                            "inline-flex items-center bg-dark-blue text-white py-[10px] px-[10px] border-[1px] border-dark-blue rounded-[5px] shadow-xl cursor-pointer transition-all ease-in-out duration-300 hover:text-dark-blue hover:bg-white focus:outline-none focus-within-outline-none",
+                          attrs: { disabled: _vm.loading },
                           on: { click: _vm.onSubmit }
                         },
                         [
-                          _vm._v(
-                            "\n                " +
-                              _vm._s(_vm.contact_label_5) +
-                              "\n              "
+                          _vm.loading
+                            ? _c(
+                                "svg",
+                                {
+                                  staticClass:
+                                    "animate-spin w-[20px] h-[20px] mr-[5px]",
+                                  attrs: {
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    fill: "none",
+                                    viewBox: "0 0 24 24"
+                                  }
+                                },
+                                [
+                                  _c("circle", {
+                                    staticClass: "opacity-25",
+                                    attrs: {
+                                      cx: "12",
+                                      cy: "12",
+                                      r: "10",
+                                      stroke: "currentColor",
+                                      "stroke-width": "4"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c("path", {
+                                    staticClass: "opacity-75",
+                                    attrs: {
+                                      fill: "currentColor",
+                                      d:
+                                        "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                                    }
+                                  })
+                                ]
+                              )
+                            : _vm._e(),
+                          _vm._v(" "),
+                          !_vm.loading
+                            ? _c(
+                                "svg",
+                                {
+                                  staticClass: "w-[20px] h-[20px] mr-[5px]",
+                                  attrs: {
+                                    xmlns: "http://www.w3.org/2000/svg",
+                                    viewBox: "0 0 20 20",
+                                    fill: "currentColor"
+                                  }
+                                },
+                                [
+                                  _c("path", {
+                                    attrs: {
+                                      d:
+                                        "M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"
+                                    }
+                                  })
+                                ]
+                              )
+                            : _vm._e(),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "font-sarpanch font-bold italic text-[18px] uppercase "
+                            },
+                            [_vm._v(_vm._s(_vm.contact_label_5))]
                           )
                         ]
                       )

@@ -1,0 +1,10 @@
+wp_privacy_delete_old_export_files:w:w
+wp_version_check:w:w
+wp_update_plugins:w:w
+wp_update_themes:w:w
+recovery_mode_clean_expired_keys:w:w
+wp_scheduled_delete:w:w
+delete_expired_transients:w:w
+wp_scheduled_auto_draft_delete:w:w
+wp_site_health_scheduled_check:w:w
+wp_https_detection:w:w

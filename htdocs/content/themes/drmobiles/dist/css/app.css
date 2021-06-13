@@ -771,6 +771,15 @@ select{
 .mt-1{
 	margin-top: 0.25rem !important;
 }
+.mr-5{
+	margin-right: 1.25rem !important;
+}
+.mr-2{
+	margin-right: 0.5rem !important;
+}
+.mr-1{
+	margin-right: 0.25rem !important;
+}
 .block{
 	display: block !important;
 }
@@ -825,6 +834,9 @@ select{
 .h-auto{
 	height: auto !important;
 }
+.h-5{
+	height: 1.25rem !important;
+}
 .max-h-\[200px\]{
 	max-height: 200px !important;
 }
@@ -845,6 +857,9 @@ select{
 }
 .w-0{
 	width: 0px !important;
+}
+.w-5{
+	width: 1.25rem !important;
 }
 .max-w-xs{
 	max-width: 20rem !important;
@@ -867,6 +882,20 @@ select{
 }
 .translate-x-0{
 	--tw-translate-x: 0px !important;
+}
+@-webkit-keyframes spin{
+	to{
+		transform: rotate(360deg);
+	}
+}
+@keyframes spin{
+	to{
+		transform: rotate(360deg);
+	}
+}
+.animate-spin{
+	-webkit-animation: spin 1s linear infinite !important;
+	        animation: spin 1s linear infinite !important;
 }
 .cursor-pointer{
 	cursor: pointer !important;
@@ -1126,6 +1155,12 @@ select{
 .opacity-0{
 	opacity: 0 !important;
 }
+.opacity-25{
+	opacity: 0.25 !important;
+}
+.opacity-75{
+	opacity: 0.75 !important;
+}
 .shadow-xl{
 	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
@@ -1291,6 +1326,16 @@ body {
 .focus\:border-indigo-300:focus{
 	--tw-border-opacity: 1 !important;
 	border-color: rgba(165, 180, 252, var(--tw-border-opacity)) !important;
+}
+
+.focus\:border-dark-blue:focus{
+	--tw-border-opacity: 1 !important;
+	border-color: rgba(4, 4, 198, var(--tw-border-opacity)) !important;
+}
+
+.focus\:outline-none:focus{
+	outline: 2px solid transparent !important;
+	outline-offset: 2px !important;
 }
 
 .focus\:ring:focus{
