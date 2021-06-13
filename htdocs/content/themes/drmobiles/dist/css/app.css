@@ -756,6 +756,9 @@ select{
 	margin-left: 20px !important;
 	margin-right: 20px !important;
 }
+.mb-\[16px\]{
+	margin-bottom: 16px !important;
+}
 .mb-\[35px\]{
 	margin-bottom: 35px !important;
 }
@@ -779,9 +782,6 @@ select{
 }
 .mt-\[4px\]{
 	margin-top: 4px !important;
-}
-.mb-\[16px\]{
-	margin-bottom: 16px !important;
 }
 .block{
 	display: block !important;
@@ -1020,6 +1020,14 @@ select{
 	padding-left: 15px !important;
 	padding-right: 15px !important;
 }
+.py-\[20px\]{
+	padding-top: 20px !important;
+	padding-bottom: 20px !important;
+}
+.px-\[80px\]{
+	padding-left: 80px !important;
+	padding-right: 80px !important;
+}
 .py-\[10px\]{
 	padding-top: 10px !important;
 	padding-bottom: 10px !important;
@@ -1060,22 +1068,6 @@ select{
 	padding-top: 48px !important;
 	padding-bottom: 48px !important;
 }
-.py-\[20\]{
-	padding-top: 20 !important;
-	padding-bottom: 20 !important;
-}
-.px-\[08px\]{
-	padding-left: 08px !important;
-	padding-right: 08px !important;
-}
-.px-\[80px\]{
-	padding-left: 80px !important;
-	padding-right: 80px !important;
-}
-.py-\[20px\]{
-	padding-top: 20px !important;
-	padding-bottom: 20px !important;
-}
 .pt-\[15px\]{
 	padding-top: 15px !important;
 }
@@ -1099,6 +1091,9 @@ select{
 }
 .font-roboto{
 	font-family: Roboto, sans-serif !important;
+}
+.text-\[32px\]{
+	font-size: 32px !important;
 }
 .text-\[18px\]{
 	font-size: 18px !important;
@@ -1127,14 +1122,11 @@ select{
 .text-\[28px\]{
 	font-size: 28px !important;
 }
-.text-\[32px\]{
-	font-size: 32px !important;
+.font-bold{
+	font-weight: 700 !important;
 }
 .font-medium{
 	font-weight: 500 !important;
-}
-.font-bold{
-	font-weight: 700 !important;
 }
 .uppercase{
 	text-transform: uppercase !important;
@@ -1145,13 +1137,13 @@ select{
 .leading-\[26px\]{
 	line-height: 26px !important;
 }
-.text-gray-500{
-	--tw-text-opacity: 1 !important;
-	color: rgba(107, 114, 128, var(--tw-text-opacity)) !important;
-}
 .text-gray-700{
 	--tw-text-opacity: 1 !important;
 	color: rgba(55, 65, 81, var(--tw-text-opacity)) !important;
+}
+.text-gray-500{
+	--tw-text-opacity: 1 !important;
+	color: rgba(107, 114, 128, var(--tw-text-opacity)) !important;
 }
 .text-white{
 	--tw-text-opacity: 1 !important;

@@ -1976,6 +1976,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2014,6 +2022,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       company_hours_1: window.contact_script_data.company_hours_1,
       company_hours_2: window.contact_script_data.company_hours_2,
       company_hours_3: window.contact_script_data.company_hours_3,
+      company_facebook_label: window.contact_script_data.company_facebook_label,
+      company_facebook: window.contact_script_data.company_facebook,
       contact_title: window.contact_script_data.contact_title,
       contact_label_1: window.contact_script_data.contact_label_1,
       contact_label_2: window.contact_script_data.contact_label_2,
@@ -10230,6 +10240,42 @@ var render = function() {
                   "div",
                   { staticClass: "font-roboto text-[18px] text-gray-500" },
                   [_vm._v(_vm._s(_vm.company_hours_3))]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "flex items-center" }, [
+                _c(
+                  "svg",
+                  {
+                    staticClass: "w-[30px] h-[30px] text-gray-500 mr-[15px]",
+                    attrs: {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      fill: "none",
+                      viewBox: "0 0 24 24",
+                      stroke: "currentColor"
+                    }
+                  },
+                  [
+                    _c("path", {
+                      attrs: {
+                        "stroke-linecap": "round",
+                        "stroke-linejoin": "round",
+                        "stroke-width": "2",
+                        d:
+                          "M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass:
+                      "font-roboto text-[18px] text-gray-500 transition-all ease-in-out duration-300 hover:text-dark-blue",
+                    attrs: { href: _vm.company_facebook }
+                  },
+                  [_vm._v(_vm._s(_vm.company_facebook_label))]
                 )
               ])
             ])

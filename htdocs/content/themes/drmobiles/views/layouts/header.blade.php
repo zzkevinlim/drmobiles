@@ -61,7 +61,7 @@
                 </a>
                 <nav class="flex">
                     @foreach($menus as $menu)
-                        <a class="inline-flex items-center h-full font-roboto font-medium text-[18px] {{ $menu->url == $current_url ? 'text-dark-blue' : 'text-gray-700' }} mx-[20px] relative" href="{{ $menu->url }}" x-data="{ hover : false }" x-on:mouseover="hover = true" x-on:mouseover.away="hover = false">
+                        <a class="inline-flex items-center h-full font-roboto font-medium text-[18px] {{ $menu->url == $current_url ? 'text-dark-blue' : 'text-gray-700' }} mx-[20px] relative" href="{{ $menu->url }}" target="{{ $menu->target }}" x-data="{ hover : false }" x-on:mouseover="hover = true" x-on:mouseover.away="hover = false">
                             <div class="absolute h-[2px] bg-dark-blue left-0 bottom-0 transition-all ease-in-out duration-300" x-bind:class="hover ? 'w-full' : 'w-0'"></div>
                             {{ $menu->title }}
                         </a>
@@ -97,7 +97,7 @@
                 </div>
             </div>
             @foreach($menus as $menu)
-                <a class="font-sarpanch font-bold italic text-[30px] {{ $menu->url == $current_url ? 'text-dark-blue' : 'text-cape-palliser' }} py-[15px] px-[60px] transition-all ease-in-out duration-300 hover:text-white hover:bg-dark-blue" href="{{ $menu->url }}">{{ $menu->title }}</a>
+                <a class="font-sarpanch font-bold italic text-[30px] {{ $menu->url == $current_url ? 'text-dark-blue' : 'text-cape-palliser' }} py-[15px] px-[60px] transition-all ease-in-out duration-300 hover:text-white hover:bg-dark-blue" href="{{ $menu->url }}" target="{{ $menu->target }}">{{ $menu->title }}</a>
             @endforeach
         </div>
     </div>

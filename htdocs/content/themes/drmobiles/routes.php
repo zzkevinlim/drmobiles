@@ -44,6 +44,8 @@ Route::get('page', [
             'company_hours_1'             => get_field('company_hours_1', 'option'),
             'company_hours_2'             => get_field('company_hours_2', 'option'),
             'company_hours_3'             => get_field('company_hours_3', 'option'),
+            'company_facebook_label'      => get_field('company_facebook_label', 'option'),
+            'company_facebook'            => get_field('company_facebook', 'option'),
             'contact_title'               => get_field('contact_title', 'option'),
             'contact_label_1'             => get_field('contact_label_1', 'option'),
             'contact_label_2'             => get_field('contact_label_2', 'option'),

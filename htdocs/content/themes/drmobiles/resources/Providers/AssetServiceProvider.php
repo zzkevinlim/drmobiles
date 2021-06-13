@@ -38,7 +38,6 @@ class AssetServiceProvider extends ServiceProvider
             $logo_image_width = $logo_image[1];
             $logo_image_height = $logo_image[2];
 
-
             $menus = wp_get_nav_menu_items(get_nav_menu_locations()['menu-1']);
 
             global $wp;
