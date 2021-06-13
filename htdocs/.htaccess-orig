@@ -14,5 +14,3 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
-
-php_value date.timezone 'Pacific/Auckland'
