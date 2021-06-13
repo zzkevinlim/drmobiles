@@ -1,8 +1,7 @@
-<div class="fixed lg:hidden z-[9999] top-[65px] right-[0]">
+<div class="fixed lg:hidden z-[9998] top-[65px] right-[0]">
     <a class="self-center font-sarpanch font-bold italic text-white text-[18px] uppercase bg-dark-blue py-[10px] px-[10px] border-[1px] border-dark-blue rounded-[5px] shadow-xl m-[15px] transition-all ease-in-out duration-300 hover:text-dark-blue hover:bg-white" href="{{ get_field('get_a_quote_page', 'option') }}">{{ get_field('get_a_quote_label', 'option') }}</a>
 </div>
-
-<div class="fixed z-[9999] bottom-[0] right-[0]">
+<div class="fixed z-[9998] bottom-[0] right-[0]">
     <div class="flex items-center justify-end w-full p-[15px]">
         <div id="scroll-to-top-button" class="inline-block text-white bg-dark-blue rounded-full shadow-xl p-[15px] cursor-pointer transition-all ease-in-out duration-300 opacity-0 hover:bg-dark-blue-300">
             <svg class="w-[40px] h-[40px] " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
