@@ -2,7 +2,6 @@
 
 @section('content')
     <main class="container px-[15px] pt-[15px] mx-auto">
-        The time now is {{ ' ('. date('l') . ', ' . date('j F Y') . ', ' . date('g:iA') . ')' }}
         <section class="box-shadow bg-no-repeat bg-cover bg-top w-full h-[450px] lg:h-[420px] mb-[30px] relative" style="background-image: url({{ get_field('banner_1')['url'] }})">
             <div class="flex flex-col items-start justify-center lg:justify-start bg-dark-blue bg-opacity-50 w-full h-full p-[30px] lg:py-[30px] lg:px-[60px] absolute inset-0 ">
                 <div class="inline-block font-sarpanch font-bold italic text-white text-[30px] lg:text-[60px] text-center bg-dark-blue px-[15px] mb-[25px]">{{ get_field('title_1') }}</div>

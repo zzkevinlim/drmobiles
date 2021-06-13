@@ -114,7 +114,7 @@ Ajax::listen('submit_contact_form', function () {
 
     $to = [];
     $to[] = get_option('admin_email');
-    $subject = 'Customer Enquiry from ' . $_POST['name'] . ' ('. date('l') . ', ' . date('j F Y') . ', ' . date('g:iA') . ')';
+    $subject = "Customer Enquiry from {$_POST['name']} (" . current_time('l, J F Y, g:iA') . ")";
     $headers = [];
     $headers[] = 'From: ' . $_POST['name'] . ' <' . $_POST['email'] . '>';
     $recipients = get_field('recipients', 'option');
