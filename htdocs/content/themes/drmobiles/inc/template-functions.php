@@ -158,3 +158,7 @@ Action::add('wp_mail_failed', function ($wp_error) {
     echo "<pre>" . print_r($wp_error) . "</pre>";
     die();
 });
+
+Action::remove('init', ['WC_Template_Loader', 'init'], 10);
+
+Filter::add('comments_template', ['WC_Template_Loader', 'comments_template_loader']);

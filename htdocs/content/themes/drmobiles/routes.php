@@ -61,3 +61,27 @@ Route::get('page', [
         return view('pages.contact');
     }
 ]);
+
+Route::any('shop', function () {
+    return view('shop.archive');
+});
+
+Route::any('product_category', function () {
+    return view('shop.archive');
+});
+
+Route::any('product_tag', function () {
+    return view('shop.archive');
+});
+
+Route::any('product', function () {
+    return view('shop.single');
+});
+
+Route::any('cart', function () {
+    return view('pages.default');
+});
+
+Route::any('checkout', function () {
+    return view('pages.default');
+});

@@ -84,4 +84,9 @@ return [
     //    'admin-head-callback' => '',
     //    'admin-preview-callback' => '',
     //]
+
+    'woocommerce',
+    'wc-product-gallery-zoom',
+    'wc-product-gallery-lightbox',
+    'wc-product-gallery-slider'
 ];

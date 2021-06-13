@@ -26,7 +26,6 @@ links_updated_date_format:w:w
 comment_moderation:w:w
 moderation_notify:w:w
 permalink_structure:w:w
-rewrite_rules:w:w
 hack_file:w:w
 blog_charset:w:w
 moderation_keys:w:w
@@ -108,6 +107,7 @@ recently_activated:w:w
 aDBc_settings:advanced-database-cleaner-pro:p
 aDBc_security_folder_code:advanced-database-cleaner-pro:p
 WPLANG:w:w
+rewrite_rules:w:w
 new_admin_email:w:w
 auto_update_core_dev:w:w
 auto_update_core_minor:w:w
@@ -128,6 +128,156 @@ widget_calendar:w:w
 widget_custom_html:w:w
 widget_tag_cloud:w:w
 acf_version:advanced-custom-fields-pro:p
+bsr_data:better-search-replace:p
+googlesitekit_db_version:google-site-kit:p
+googlesitekit_connected_proxy_url:google-site-kit:p
+googlesitekit_credentials:google-site-kit:p
+googlesitekit_has_connected_admins:google-site-kit:p
+googlesitekit_owner_id:google-site-kit:p
+googlesitekit_active_modules:google-site-kit:p
+googlesitekit_analytics_settings:google-site-kit:p
+googlesitekit_search-console_settings:google-site-kit:p
+woocommerce_currency:woocommerce:p
+woocommerce_tax_based_on:woocommerce:p
+woocommerce_shipping_tax_class:woocommerce:p
+woocommerce_tax_round_at_subtotal:woocommerce:p
+woocommerce_tax_display_cart:woocommerce:p
+woocommerce_tax_total_display:woocommerce:p
+woocommerce_manage_stock:woocommerce:p
+woocommerce_notify_no_stock:woocommerce:p
+woocommerce_notify_no_stock_amount:woocommerce:p
+woocommerce_hide_out_of_stock_items:woocommerce:p
+woocommerce_price_display_suffix:woocommerce:p
+woocommerce_prices_include_tax:woocommerce:p
+woocommerce_default_country:woocommerce:p
+woocommerce_task_list_tracked_completed_tasks:woocommerce:p
+woocommerce_task_list_complete:woocommerce:p
+woocommerce_notify_low_stock:woocommerce:p
+woocommerce_notify_low_stock_amount:woocommerce:p
+woocommerce_db_version:woocommerce:p
+woocommerce_meta_box_errors:woocommerce:p
+woocommerce_default_customer_address:woocommerce:p
+woocommerce_file_download_method:woocommerce:p
+woocommerce_admin_notices:woocommerce:p
+woocommerce_maxmind_geolocation_settings:woocommerce:p
+woocommerce_permalinks:woocommerce:p
+woocommerce_downloads_add_hash_to_filename:woocommerce:p
+woocommerce_queue_flush_rewrite_rules:woocommerce:p
+woocommerce_weight_unit:woocommerce:p
+woocommerce_dimension_unit:woocommerce:p
+woocommerce_allow_tracking:woocommerce:p
+default_product_cat:woocommerce:p
+woocommerce_allow_bulk_remove_personal_data:woocommerce:p
+woocommerce_show_marketplace_suggestions:woocommerce:p
+woocommerce_marketplace_suggestions:woocommerce:p
+woocommerce_currency_pos:woocommerce:p
+woocommerce_enable_guest_checkout:woocommerce:p
+woocommerce_enable_checkout_login_reminder:woocommerce:p
+woocommerce_enable_signup_and_login_from_checkout:woocommerce:p
+woocommerce_enable_myaccount_registration:woocommerce:p
+woocommerce_registration_generate_username:woocommerce:p
+woocommerce_registration_generate_password:woocommerce:p
+woocommerce_erasure_request_removes_order_data:woocommerce:p
+woocommerce_erasure_request_removes_download_data:woocommerce:p
+woocommerce_registration_privacy_policy_text:woocommerce:p
+woocommerce_checkout_privacy_policy_text:woocommerce:p
+woocommerce_delete_inactive_accounts:woocommerce:p
+woocommerce_trash_pending_orders:woocommerce:p
+woocommerce_trash_failed_orders:woocommerce:p
+woocommerce_trash_cancelled_orders:woocommerce:p
+woocommerce_anonymize_completed_orders:woocommerce:p
+woocommerce_cart_page_id:woocommerce:p
+woocommerce_checkout_page_id:woocommerce:p
+woocommerce_myaccount_page_id:woocommerce:p
+woocommerce_terms_page_id:woocommerce:p
+woocommerce_force_ssl_checkout:woocommerce:p
+woocommerce_unforce_ssl_checkout:woocommerce:p
+woocommerce_checkout_pay_endpoint:woocommerce:p
+woocommerce_checkout_order_received_endpoint:woocommerce:p
+woocommerce_myaccount_add_payment_method_endpoint:woocommerce:p
+woocommerce_myaccount_delete_payment_method_endpoint:woocommerce:p
+woocommerce_myaccount_set_default_payment_method_endpoint:woocommerce:p
+woocommerce_myaccount_orders_endpoint:woocommerce:p
+woocommerce_myaccount_view_order_endpoint:woocommerce:p
+woocommerce_myaccount_downloads_endpoint:woocommerce:p
+woocommerce_myaccount_edit_account_endpoint:woocommerce:p
+woocommerce_myaccount_edit_address_endpoint:woocommerce:p
+woocommerce_myaccount_payment_methods_endpoint:woocommerce:p
+woocommerce_myaccount_lost_password_endpoint:woocommerce:p
+woocommerce_logout_endpoint:woocommerce:p
+woocommerce_api_enabled:woocommerce:p
+woocommerce_email_from_name:woocommerce:p
+woocommerce_email_from_address:woocommerce:p
+woocommerce_email_header_image:woocommerce:p
+woocommerce_email_footer_text:woocommerce:p
+woocommerce_email_base_color:woocommerce:p
+woocommerce_email_background_color:woocommerce:p
+woocommerce_email_body_background_color:woocommerce:p
+woocommerce_email_text_color:woocommerce:p
+woocommerce_merchant_email_notifications:woocommerce:p
+woocommerce_store_address:woocommerce:p
+woocommerce_store_address_2:woocommerce:p
+woocommerce_store_city:woocommerce:p
+woocommerce_store_postcode:woocommerce:p
+woocommerce_allowed_countries:woocommerce:p
+woocommerce_all_except_countries:woocommerce:p
+woocommerce_specific_allowed_countries:woocommerce:p
+woocommerce_ship_to_countries:woocommerce:p
+woocommerce_specific_ship_to_countries:woocommerce:p
+woocommerce_calc_taxes:woocommerce:p
+woocommerce_enable_coupons:woocommerce:p
+woocommerce_calc_discounts_sequentially:woocommerce:p
+woocommerce_price_thousand_sep:woocommerce:p
+woocommerce_price_decimal_sep:woocommerce:p
+woocommerce_price_num_decimals:woocommerce:p
+woocommerce_shop_page_id:woocommerce:p
+woocommerce_cart_redirect_after_add:woocommerce:p
+woocommerce_enable_ajax_add_to_cart:woocommerce:p
+woocommerce_placeholder_image:woocommerce:p
+woocommerce_enable_reviews:woocommerce:p
+woocommerce_review_rating_verification_label:woocommerce:p
+woocommerce_review_rating_verification_required:woocommerce:p
+woocommerce_enable_review_rating:woocommerce:p
+woocommerce_review_rating_required:woocommerce:p
+woocommerce_hold_stock_minutes:woocommerce:p
+woocommerce_stock_email_recipient:woocommerce:p
+woocommerce_stock_format:woocommerce:p
+woocommerce_downloads_require_login:woocommerce:p
+woocommerce_downloads_grant_access_after_payment:woocommerce:p
+woocommerce_enable_shipping_calc:woocommerce:p
+woocommerce_shipping_cost_requires_address:woocommerce:p
+woocommerce_ship_to_destination:woocommerce:p
+woocommerce_shipping_debug_mode:woocommerce:p
+woocommerce_tax_classes:woocommerce:p
+woocommerce_tax_display_shop:woocommerce:p
+woocommerce_checkout_highlight_required_fields:woocommerce:p
+woocommerce_schema_version:woocommerce:p
+woocommerce_single_image_width:woocommerce:p
+woocommerce_thumbnail_image_width:woocommerce:p
+woocommerce_demo_store:woocommerce:p
+woocommerce_version:woocommerce:p
+woocommerce_admin_install_timestamp:woocommerce:p
+action_scheduler_migration_status:woocommerce:p
+woocommerce_gateway_order:woocommerce:p
+current_theme_supports_woocommerce:woocommerce:p
+wpseo:woocommerce:p
+woocommerce_inbox_variant_assignment:woocommerce:p
+woocommerce_demo_store_notice:woocommerce:p
+action_scheduler_hybrid_store_demarkation:woocommerce:p
+woocommerce_default_homepage_layout:woocommerce:p
+woocommerce_onboarding_profile:woocommerce:p
+woocommerce_task_list_welcome_modal_dismissed:woocommerce:p
+woocommerce_bacs_settings:woocommerce:p
+woocommerce_cod_settings:woocommerce:p
+woocommerce_task_list_appearance_complete:woocommerce:p
+woocommerce_admin_version:woocommerce:p
+wc_remote_inbox_notifications_wca_updated:woocommerce:p
+wc_remote_inbox_notifications_specs:woocommerce:p
+wc_remote_inbox_notifications_stored_state:woocommerce:p
+wc_blocks_db_schema_version:woocommerce:p
+wpseo_titles:wordpress-seo:p
+wpseo_social:wordpress-seo:p
+wpseo_ryte:wordpress-seo:p
 widget_media_audio::w
 widget_media_image::w
 widget_media_gallery::w
@@ -194,3 +344,35 @@ options_contact_response_3:woocommerce (46.15%):p
 _options_contact_response_3:woocommerce (48.15%):p
 options_contact_response_4:woocommerce (46.15%):p
 _options_contact_response_4:woocommerce (48.15%):p
+secure_auth_key::w
+secure_auth_salt::w
+options_company_opening_hours_title:drmobiles (77.14%):t
+_options_company_opening_hours_title:o:o
+yoast_migrations_free:wordpress-seo (80.95%):p
+options_recipients_0_name: (40%):w
+_options_recipients_0_name: (42.31%):w
+options_recipients_0_email:wordpress-seo (38.46%):p
+_options_recipients_0_email:wordpress-seo (40.74%):p
+options_company_facebook:woocommerce (41.67%):p
+_options_company_facebook:woocommerce (44%):p
+options_company_facebook_label:o:o
+_options_company_facebook_label:woocommerce (35.48%):p
+schema-ActionScheduler_StoreSchema:woocommerce (79.41%):p
+schema-ActionScheduler_LoggerSchema:woocommerce (80%):p
+action_scheduler_lock_async-request-runner:woocommerce (52.38%):p
+widget_woocommerce_widget_cart:woocommerce (76.67%):p
+widget_woocommerce_layered_nav_filters:woocommerce (81.58%):p
+widget_woocommerce_layered_nav:woocommerce (76.67%):p
+widget_woocommerce_price_filter:woocommerce (77.42%):p
+widget_woocommerce_product_categories:woocommerce (81.08%):p
+widget_woocommerce_product_search:woocommerce (78.79%):p
+widget_woocommerce_product_tag_cloud:woocommerce (80.56%):p
+widget_woocommerce_products:o:o
+widget_woocommerce_recently_viewed_products:woocommerce (83.72%):p
+widget_woocommerce_top_rated_products:woocommerce (81.08%):p
+widget_woocommerce_recent_reviews:woocommerce (78.79%):p
+widget_woocommerce_rating_filter:woocommerce (78.13%):p
+product_cat_children:woocommerce (65%):p
+pa_size_children:woocommerce (43.75%):p
+pa_color_children:o:o
+woocommerce_free_shipping_1_settings:woocommerce (72.22%):p
