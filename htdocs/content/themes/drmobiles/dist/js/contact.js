@@ -10198,8 +10198,7 @@ var render = function() {
                         {
                           staticClass:
                             "inline-flex items-center bg-dark-blue text-white py-[10px] px-[10px] border-[1px] border-dark-blue rounded-[5px] shadow-xl cursor-pointer transition-all ease-in-out duration-300 hover:text-dark-blue hover:bg-white focus:outline-none focus-within-outline-none",
-                          attrs: { disabled: _vm.loading },
-                          on: { click: _vm.onSubmit }
+                          attrs: { type: "submit", disabled: _vm.loading }
                         },
                         [
                           _vm.loading

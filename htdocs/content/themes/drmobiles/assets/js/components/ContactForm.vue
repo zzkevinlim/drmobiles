@@ -31,7 +31,7 @@
                 </ValidationProvider>
               </label>
               <div class="block text-right">
-                <button v-on:click="onSubmit" :disabled="loading" class="inline-flex items-center bg-dark-blue text-white py-[10px] px-[10px] border-[1px] border-dark-blue rounded-[5px] shadow-xl cursor-pointer transition-all ease-in-out duration-300 hover:text-dark-blue hover:bg-white focus:outline-none focus-within-outline-none">
+                <button type="submit" :disabled="loading" class="inline-flex items-center bg-dark-blue text-white py-[10px] px-[10px] border-[1px] border-dark-blue rounded-[5px] shadow-xl cursor-pointer transition-all ease-in-out duration-300 hover:text-dark-blue hover:bg-white focus:outline-none focus-within-outline-none">
                   <svg v-if="loading" class="animate-spin w-[20px] h-[20px] mr-[5px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
